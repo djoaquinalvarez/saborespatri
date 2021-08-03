@@ -1,0 +1,495 @@
+:root {
+    --dark-blue: #08090ef5;
+    --tuscan-red: #370617;
+    --black-raspberry: #6A040F;
+    --chestnut: #9D0208;
+    --crismon-red: #D00000;
+    --scarlet-lake: #DC2F02;
+    --mineral-orange: #E85D04;
+    --sand: #F48C06;
+    --light-sand: #FAA307;
+    --golden-rod: #FFBA08;
+    --soft-white: #f1faee;
+    --soft-gray-white: #eaf0f5f6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Georama', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header span {
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    background-image: url('../images/top-view-delicious-focaccia-inrgedients.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(75%);
+}
+
+header .header__text{
+    position: absolute;
+    text-align: center;
+}
+
+header .header__text h1 {
+    margin-bottom: 4px;
+    font-size: 2.5rem;
+    color: var(--soft-white);
+}
+
+header .header__text p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--soft-gray-white);
+}
+
+header .header-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    background-image: url('../images/icons8-sombrero-de-chef-50.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(100%);
+}
+
+main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.main-quick-menu span {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 35px;
+    display: inline-block;
+    background-image: url('../images/icons8-restaurant-menu-50.png');
+    background-size: cover;
+}
+
+.main-quick-menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/superficies-pizarra_34805-10.jpg');
+}
+
+.main__food-fast {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main .main__food-fast h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.main__food-fast .main__food-fast--list a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+
+.main__food-fast .main__food-fast--list li {
+    padding: 25px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+#pizza {
+    background-image: url('../images/top-view-slices-salami-pizza.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#sand {
+    background-image: url('../images/pexels-engin-akyurt-3219483.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#emp {
+    background-image: url('../images/EMPANADAS-CRIOLLAS-VA1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#bebidas {
+    background-image: url('../images/gettyimages-1062831310_3505405_20190904164444.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#papas {
+    background-image: url('../images/frenchfries.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.food--section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-blue);
+}
+
+.food--section .pizza-icon-section {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    display: inline-block;
+    background-image: url('../images/istockphoto-924741104-1024x1024.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+.table--container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.table--container table {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.table--container td {
+    width: 33%;
+    font-size: 1.4rem;
+    padding: 10px 0;
+    font-weight: 500;
+    color: var(--soft-white);
+    background-color: rgba(24, 22, 22, 0.945);
+}
+
+.column-name td{
+    font-weight: 700;
+    background-color:#f1faee18;
+}
+
+.table--container .top-right-table {
+    border-radius: 5px 0 0 0;
+}
+
+.table--container .top-left-table {
+    border-radius: 0 5px 0 0;
+}
+
+.table--container .bottom-left-table {
+    border-radius: 0 0 0 5px;
+}
+
+.table--container .bottom-right-table {
+    border-radius: 0 0 5px 0;
+}
+
+.food--section .burger-icon-section {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    display: inline-block;
+    background-image: url('../images/hamburguesaSection.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+.burger-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.empanada-icon-section {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    display: inline-block;
+    background-image: url('../images/EMPANADAS-CRIOLLAS-VA1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+.bebida-icon-section {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    display: inline-block;
+    background-image: url('../images/refresco-soda-pxhere-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+.papas-icon-section {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    display: inline-block;
+    background-image: url('../images/frenchfries.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+.viandas-section {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/MILANESA-840x473.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(100%);
+}
+
+.viandas-section h3 {
+    margin-top: 115px;
+    margin-bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--soft-white);
+}
+
+.viandas-section .viandas-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url('../images/icons8-take-away-food-50.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 60px;
+}
+
+.viandas-section p {
+    padding: 5px 5px;
+    font-family: 'Georama', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+}
+
+.viandas-section .text-menu {
+    font-weight: 600;
+}
+
+.cajita-feliz-section {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--mineral-orange);
+}
+
+.cajita-feliz-section h4{
+    margin-top: 70px;
+    margin-bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--soft-white);
+}
+
+.cajita-feliz-section p {
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--soft-white);
+}
+
+.cajita-feliz-section .cajita-feliz-principalIcon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    background-image: url('../images/icons8-treasure-chest-50.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cajitafeliz--icons .coca-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    right: 15%;
+    background-image: url('../images/icons8-cola-50.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cajitafeliz--icons .burger-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    right: 33%;
+    background-image: url('../images/icons8-hamburger-50.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cajitafeliz--icons .papa-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    background-image: url('../images/icons8-french-fries-50.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cajitafeliz--icons .sorpresa-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    left: 15%;
+    background-image: url('../images/icons8-christmas-gift-50.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cajita-feliz-section .cajitafeliz-ingredientes {
+    margin-top: 40px;
+    padding: 5px 5px;
+    background-color: var(--soft-white);
+    border-radius: 5px;
+    color: var(--mineral-orange);
+}
+
+.cajita-feliz-section .cajitafeliz--price {
+    margin-top: 95px;
+    font-family: 'Josefin sans', sans-serif;
+    font-size:5.2rem;
+    font-weight:bold;
+    color: var(--soft-white);
+    vertical-align: text-bottom;
+}
+
+.cajitafeliz--price .cajitafeliz--price-sign {
+    margin-right: 3px;
+    font-size:1.5rem;
+    font-weight:300;
+    vertical-align: 24px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--dark-blue);
+}
+
+footer section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.2rem;
+    font-weight:500;
+    line-height:1.8rem;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--soft-white);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right img {
+    width: 40px;
+    height: 40px;
+}
+
+.right p {
+    margin-top: 7px;
+    font-weight: bold;
+    color: var(--soft-white);
+}
