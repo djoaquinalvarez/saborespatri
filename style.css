@@ -40,7 +40,7 @@ header span {
     height: 200px;
     display: inline-block;
     position: relative;
-    background-image: url('../images/top-view-delicious-focaccia-inrgedients.jpg');
+    background-image: url('./images/top-view-delicious-focaccia-inrgedients.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -70,7 +70,7 @@ header .header-icon {
     display: inline-block;
     position: absolute;
     top: 20px;
-    background-image: url('../images/icons8-sombrero-de-chef-50.png');
+    background-image: url('./images/icons8-sombrero-de-chef-50.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +91,7 @@ main {
     position: absolute;
     top: 35px;
     display: inline-block;
-    background-image: url('../images/icons8-restaurant-menu-50.png');
+    background-image: url('./images/icons8-restaurant-menu-50.png');
     background-size: cover;
 }
 
@@ -104,7 +104,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../images/superficies-pizarra_34805-10.jpg');
+    background-image: url('./images/superficies-pizarra_34805-10.jpg');
 }
 
 .main__food-fast {
@@ -135,31 +135,31 @@ main .main__food-fast h2 {
 }
 
 #pizza {
-    background-image: url('../images/top-view-slices-salami-pizza.jpg');
+    background-image: url('./images/top-view-slices-salami-pizza.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #sand {
-    background-image: url('../images/pexels-engin-akyurt-3219483.jpg');
+    background-image: url('./images/pexels-engin-akyurt-3219483.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #emp {
-    background-image: url('../images/EMPANADAS-CRIOLLAS-VA1.jpg');
+    background-image: url('./images/EMPANADAS-CRIOLLAS-VA1.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #bebidas {
-    background-image: url('../images/gettyimages-1062831310_3505405_20190904164444.jpg');
+    background-image: url('./images/gettyimages-1062831310_3505405_20190904164444.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #papas {
-    background-image: url('../images/frenchfries.jpg');
+    background-image: url('./images/frenchfries.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -179,7 +179,7 @@ main .main__food-fast h2 {
     height: 100px;
     margin-bottom: 40px;
     display: inline-block;
-    background-image: url('../images/istockphoto-924741104-1024x1024.jpg');
+    background-image: url('./images/istockphoto-924741104-1024x1024.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -236,7 +236,7 @@ main .main__food-fast h2 {
     height: 100px;
     margin-bottom: 40px;
     display: inline-block;
-    background-image: url('../images/hamburguesaSection.jpg');
+    background-image: url('./images/hamburguesaSection.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -257,7 +257,7 @@ main .main__food-fast h2 {
     height: 100px;
     margin-bottom: 40px;
     display: inline-block;
-    background-image: url('../images/EMPANADAS-CRIOLLAS-VA1.jpg');
+    background-image: url('./images/EMPANADAS-CRIOLLAS-VA1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -269,7 +269,7 @@ main .main__food-fast h2 {
     height: 100px;
     margin-bottom: 40px;
     display: inline-block;
-    background-image: url('../images/refresco-soda-pxhere-2.jpg');
+    background-image: url('./images/refresco-soda-pxhere-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -281,7 +281,7 @@ main .main__food-fast h2 {
     height: 100px;
     margin-bottom: 40px;
     display: inline-block;
-    background-image: url('../images/frenchfries.jpg');
+    background-image: url('./images/frenchfries.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -295,7 +295,7 @@ main .main__food-fast h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../images/MILANESA-840x473.jpg');
+    background-image: url('./images/MILANESA-840x473.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -315,7 +315,7 @@ main .main__food-fast h2 {
     width: 40px;
     height: 40px;
     display: inline-block;
-    background-image: url('../images/icons8-take-away-food-50.png');
+    background-image: url('./images/icons8-take-away-food-50.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -369,7 +369,7 @@ main .main__food-fast h2 {
     display: inline-block;
     position: absolute;
     top: 20px;
-    background-image: url('../images/icons8-treasure-chest-50.png');
+    background-image: url('./images/icons8-treasure-chest-50.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -381,7 +381,7 @@ main .main__food-fast h2 {
     position: absolute;
     top: 200px;
     right: 15%;
-    background-image: url('../images/icons8-cola-50.png');
+    background-image: url('./images/icons8-cola-50.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -393,7 +393,7 @@ main .main__food-fast h2 {
     position: absolute;
     top: 200px;
     right: 33%;
-    background-image: url('../images/icons8-hamburger-50.png');
+    background-image: url('./images/icons8-hamburger-50.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -405,7 +405,7 @@ main .main__food-fast h2 {
     position: absolute;
     top: 200px;
     left: 35%;
-    background-image: url('../images/icons8-french-fries-50.png');
+    background-image: url('./images/icons8-french-fries-50.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -417,7 +417,7 @@ main .main__food-fast h2 {
     position: absolute;
     top: 200px;
     left: 15%;
-    background-image: url('../images/icons8-christmas-gift-50.png');
+    background-image: url('./images/icons8-christmas-gift-50.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
