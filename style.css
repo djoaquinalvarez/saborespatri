@@ -472,6 +472,30 @@ footer .left ul {
     margin: 10px 0;
 }
 
+.left .instagram-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display: inline-block;
+    background-image: url("./images/icons8-instagram-logo-96.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align: -6px;
+}
+
+.left .whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display: inline-block;
+    background-image: url("./images/icons8-whatsapp-192.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align: -6px;
+}
+
 .left a {
     text-decoration: none;
     color: var(--soft-white);
