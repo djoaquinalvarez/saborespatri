@@ -25,48 +25,64 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+header{
     width: 100%;
     height: auto;
     display: flex;
+    position: absolute;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    z-index: 99;
 }
 
-header span {
+header .header-background {
     width: 100%;
-    height: 200px;
+    height: 130px;
     display: inline-block;
     position: relative;
-    background-image: url('./images/top-view-delicious-focaccia-inrgedients.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-image: url('./images/top-view-delicious-focaccia-inrgedients.jpg');*/
+    background-color: var(--dark-blue);
     filter: brightness(75%);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 header .header__text{
     position: absolute;
+    top: 65px;
     text-align: center;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 header .header__text h1 {
     margin-bottom: 4px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--soft-white);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 header .header__text p {
     font-size: 1rem;
     font-weight: 500;
     color: var(--soft-gray-white);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 header .header-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     position: absolute;
     top: 20px;
@@ -75,7 +91,42 @@ header .header-icon {
     background-repeat: no-repeat;
     background-position: center;
     filter: brightness(100%);
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
+
+.header2 {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 99;
+    /*background-image: url('./images/top-view-delicious-focaccia-inrgedients.jpg');*/
+    background-color: var(--dark-blue);
+}
+
+.header2 .background {
+    width: 100%;
+    height: 70px;
+    background-color: var(--dark-blue);
+    
+}
+
+.header2 .headericon {
+    background-image: url('');
+}
+
+.header2 .titulo {
+    position: absolute;
+    top: 16px;
+    text-align: center;
+    color: var(--soft-gray-white);
+}
+
+.header2 .titulo p{
+    color: var(--dark-blue);
+}
+
 
 main {
     display: flex;
@@ -85,11 +136,11 @@ main {
     align-items: center;
 }
 
-.main-quick-menu span {
+.main-quick-menu .menu-icon {
     width: 35px;
     height: 35px;
     position: absolute;
-    top: 35px;
+    top: 165px;
     display: inline-block;
     background-image: url('./images/icons8-restaurant-menu-50.png');
     background-size: cover;
@@ -99,24 +150,30 @@ main {
     width: 100%;
     height: auto;
     position: relative;
-    padding-top: 90px;
+    padding-top: 210px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url('./images/superficies-pizarra_34805-10.jpg');
+    
 }
+
 
 .main__food-fast {
     width: 90%;
     margin: 0 auto;
 }
 
-main .main__food-fast h2 {
+main .main__food-fast .food-titulo {
+    width: 200px;
     font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 30px;
-    color: white;
+    font-weight: 600;
+    padding: 10px 10px;
+    margin: 30px auto;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
 }
 
 .main__food-fast .main__food-fast--list a{
@@ -129,7 +186,7 @@ main .main__food-fast h2 {
 
 .main__food-fast .main__food-fast--list li {
     padding: 25px 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     border-radius: 5px;
     list-style-type: none;
 }
@@ -138,6 +195,7 @@ main .main__food-fast h2 {
     background-image: url('./images/top-view-slices-salami-pizza.jpg');
     background-size: cover;
     background-position: center;
+    
 }
 
 #sand {
@@ -184,10 +242,11 @@ main .main__food-fast h2 {
     background-size: cover;
     background-position: center;
     filter: brightness(60%);
+
 }
 
 .table--container{
-    width: 90%;
+    width: 95%;
     min-width: 230px;
     max-width: 350px;
     height: auto;
@@ -204,11 +263,33 @@ main .main__food-fast h2 {
 .table--container td {
     width: 33%;
     font-size: 1.4rem;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
     font-weight: 500;
     color: var(--soft-white);
     background-color: rgba(24, 22, 22, 0.945);
+    transition: 200ms all;
 }
+
+.button-pedir-left, .button-pedir-right {
+    padding: 10px 15px 10px 15px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    transition: 200ms all;
+}
+
+.table--container .button-pedir-right {
+    border-radius: 0 5px 5px 0;
+}
+
+.button-pedir-left:hover, .button-pedir-left:active, .button-pedir-right:hover, .button-pedir-right:active{
+    background-color:#eeccb72b;
+}
+
 
 .column-name td{
     font-weight: 700;
@@ -449,9 +530,16 @@ main .main__food-fast h2 {
 
 footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-blue);
+}
+
+footer .footer-information {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 150px;
-    background-color: var(--dark-blue);
 }
 
 footer section {
@@ -460,6 +548,18 @@ footer section {
     justify-content: center;
     align-items: center;
 }
+
+footer p {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+footer p .nombre-desarrollador {
+    font-weight: bold;
+    font-family: "Montserrat";
+}
+
 
 footer .left ul {
     font-size: 1.2rem;
@@ -531,7 +631,7 @@ footer .left ul {
 	padding: 18px 20px; /* Relleno del boton */
 	position: fixed;
 	bottom: 40px;
-	right: 40px;
+	right: 7vw;
 	transition: all 300ms ease 0ms;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     background-image: url("./images/icons8-whatsapp-192.png");
@@ -540,8 +640,47 @@ footer .left ul {
     background-size: 40px;
 	z-index: 99;
 }
+
+.total-flotante {
+    max-width: 70%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+	font-size: 16px; /* Cambiar el tamaño de la tipografia */
+	/*text-transform: uppercase;  Texto en mayusculas */
+	/*font-weight: bold;  Fuente en negrita o bold */
+	/*color: #ffffff;  Color del texto */
+	border-radius: 15px; /* Borde del boton */
+	/*letter-spacing: 2px;  Espacio entre letras */
+	background-color: var(--dark-blue); /* Color de fondo */
+	padding: 18px 20px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	left: 20px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 40px;
+	z-index: 99;
+}
+
 .boton-flotante:hover {
 	/*background-color: #2c2fa5;  Color de fondo al pasar el cursor */
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
+}
+
+
+.table--container .elemento-agregado {
+    background-color:var(--mineral-orange);
+    transition: 200ms all;
+    border-radius:5px;
+}
+
+.boton-elemento-agregado:hover, .boton-elemento-agregado:active {
+    background-color:#eeccb72b;
+    transition: 200ms all;
 }

@@ -13,13 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Georama:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto+Condensed:wght@300;700&family=Roboto:wght@400;500&family=Trocchi&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <span></span>
-        <span class="header-icon"></span>
-        <div class="header__text">
+        <span class = "header-background" id="header-background"></span>
+        <span class="header-icon" id="header-icon"></span>
+        <div class="header__text" id="header__text">
             <h1>SABORES PATRI</h1>
             <p>Disfruta del sabor de lo casero, sin tener que cocinar.</p>
         </div>
@@ -27,15 +29,18 @@
 
     <main>
         <a href="https://api.whatsapp.com/send?phone=+5493534190049&text=Hola,%20me%20gustar%C3%ADa%20pedir%20..." target="_blank" class="boton-flotante"></a>
-        <section class="main-quick-menu">
-            <span></span>
+        <p class="total-flotante">Total de tu pedido: $0</p>
+        <section class="main-quick-menu" id="main_quick_menu">
+            <span class="menu-icon"></span>
             <div class="main__food-fast">
-                <h2>Nuestra Comida</h2>
+                <p class="food-titulo">Nuestra Comida</p>
                 <ul class="main__food-fast--list">
-                    <li id="pizza"><a href="#section-pizza">PIZZAS</a></li>
+                    <li id="pizza"><a href="pizza.html">PIZZAS</a></li>
                     <li id="sand"><a href="#section-burger">SANDWICHES</a></li>
                     <li id="emp"><a href="#section-empanada">EMPANADAS</a></li>
+                    <!-- A IMPLEMENTAR BEBIDAS
                     <li id="bebidas"><a href="#section-bebida">BEBIDAS</a></li>
+                    -->
                     <li id="papas"><a href="#section-papas">PAPAS</a></li>
                 </ul>
             </div>
@@ -44,250 +49,247 @@
         <section class="food--section">
             <span class="pizza-icon-section" id="section-pizza"></span>
             <div class="table--container">
-                <table>
+                <table id="table-pizzas">
                     <tr class="column-name">
                         <td class="top-right-table">Pizza</td>
                         <td>Precio</td>
                         <td class="top-left-table">Media pizza</td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-comun">
                         <td>Común</td>
-                        <td>$350</td>
-                        <td>$200</td>
+                        <td id="precio-comun"><input type="button" class="button-pedir-left" id="comun-menos" value="-">$350<input type="button" class="button-pedir-right" id="comun-mas" value="+"></td>
+                        <td id="precio-media-comun"><input type="button" class="button-pedir-left" id="comun-media-menos" value="-">$200<input type="button" class="button-pedir-right" id="comun-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-especial">
                         <td>Especial</td>
-                        <td>$400</td>
-                        <td>$250</td>
+                        <td id="precio-especial"><input type="button" class="button-pedir-left" id="especial-menos" value="-">$400<input type="button" class="button-pedir-right" id="especial-mas" value="+"></td>
+                        <td id="precio-media-especial"><input type="button" class="button-pedir-left" id="especial-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="especial-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-fuga">
                         <td>Fuggazeta</td>
-                        <td>$450</td>
-                        <td>$250</td>
+                        <td id="precio-fuga"><input type="button" class="button-pedir-left" id="fuga-menos" value="-">$450<input type="button" class="button-pedir-left" id="fuga-mas" value="+"></td>
+                        <td id="precio-media-fuga"><input type="button" class="button-pedir-left" id="fuga-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="fuga-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-napo">
                         <td>Napolitana</td>
-                        <td>$400</td>
-                        <td>$250</td>
+                        <td id="precio-napo"><input type="button" class="button-pedir-left" id="napo-menos" value="-">$400<input type="button" class="button-pedir-left" id="napo-mas" value="+"></td>
+                        <td id="precio-media-napo"><input type="button" class="button-pedir-left" id="napo-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="napo-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-arge">
                         <td>Argentina</td>
-                        <td>$500</td>
-                        <td>$270</td>
+                        <td id="precio-arge"><input type="button" class="button-pedir-left" id="arge-menos" value="-">$500<input type="button" class="button-pedir-left" id="arge-mas" value="+"></td>
+                        <td id="precio-media-arge"><input type="button" class="button-pedir-left" id="arge-media-menos" value="-">$270<input type="button" class="button-pedir-left" id="arge-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-doblequeso">
                         <td>Doble queso</td>
-                        <td>$400</td>
-                        <td>$250</td>
+                        <td id="precio-doblequeso"><input type="button" class="button-pedir-left" id="dobleq-menos" value="-">$400<input type="button" class="button-pedir-left" id="dobleq-mas" value="+"></td>
+                        <td id="precio-media-doblequeso"><input type="button" class="button-pedir-left" id="dobleq-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="dobleq-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-palmito">
                         <td>Palmito</td>
-                        <td>$500</td>
-                        <td>$270</td>
+                        <td id="precio-palmito"><input type="button" class="button-pedir-left" id="palmito-menos" value="-">$500<input type="button" class="button-pedir-left" id="palmito-mas" value="+"></td>
+                        <td id="precio-media-palmito"><input type="button" class="button-pedir-left" id="palmito-media-menos" value="-">$270<input type="button" class="button-pedir-left" id="palmito-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-choclo">
                         <td>Choclo</td>
-                        <td>$400</td>
-                        <td>$250</td>
+                        <td id="precio-choclo"><input type="button" class="button-pedir-left" id="choclo-menos" value="-">$400<input type="button" class="button-pedir-left" id="choclo-mas" value="+"></td>
+                        <td id="precio-media-choclo"><input type="button" class="button-pedir-left" id="choclo-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="choclo-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-anchoa">
                         <td>Anchoa</td>
-                        <td>$470</td>
-                        <td>$250</td>
+                        <td id="precio-anchoa"><input type="button" class="button-pedir-left" id="anchoa-menos" value="-">$470<input type="button" class="button-pedir-left" id="anchoa-mas" value="+"></td>
+                        <td id="precio-media-anchoa"><input type="button" class="button-pedir-left" id="anchoa-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="anchoa-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-roque">
                         <td>Roquefort</td>
-                        <td>$470</td>
-                        <td>$250</td>
+                        <td id="precio-roque"><input type="button" class="button-pedir-left" id="roque-menos" value="-">$470<input type="button" class="button-pedir-left" id="roque-mas" value="+"></td>
+                        <td id="precio-media-roque"><input type="button" class="button-pedir-left" id="roque-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="roque-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-veggi">
                         <td>Vegana</td>
-                        <td>$500</td>
-                        <td>$270</td>
+                        <td id="precio-veggi"><input type="button" class="button-pedir-left" id="veggi-menos" value="-">$500<input type="button" class="button-pedir-left" id="veggi-mas" value="+"></td>
+                        <td id="precio-media-veggi"><input type="button" class="button-pedir-left" id="veggi-media-menos" value="-">$270<input type="button" class="button-pedir-left" id="veggi-media-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="pizza-calabresa">
                         <td class="bottom-left-table">Calabresa</td>
-                        <td>$400</td>
-                        <td class="bottom-right-table">$220</td>
+                        <td id="precio-calabresa"><input type="button" class="button-pedir-left" id="calabresa-menos" value="-">$400<input type="button" class="button-pedir-left" id="calabresa-mas" value="+"></td>
+                        <td id="precio-media-calabresa" class="bottom-right-table"><input type="button" class="button-pedir-left" id="calabresa-media-menos" value="-">$220<input type="button" class="button-pedir-left" id="calabresa-media-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
 
             <span class="burger-icon-section" id="section-burger"></span>
             <div class="table--container">
-                <table>
+                <table id="table-hamburguesas">
                     <tr class="column-name">
                         <td class="top-right-table">Hamburguesa</td>
                         <td class="top-left-table">Precio</td>
                     </tr>
-                    <tr>
+                    <tr id="hamb-comun">
                         <td>Común</td>
-                        <td>$330</td>
+                        <td id="precio-hamb-comun"><input type="button" class="button-pedir-left" id="hamb-comun-menos" value="-">$330<input type="button" class="button-pedir-left" id="hamb-comun-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="hamb-especial">
                         <td class="bottom-left-table">Especial</td>
-                        <td class="bottom-right-table">$370</td>
+                        <td id="precio-hamb-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="hamb-especial-menos" value="-">$370<input type="button" class="button-pedir-left" id="hamb-especial-mas" value="+"></td>
                     </tr>
                 </table>
-
-                <table>
+            </div>
+            <div class="table--container">
+                <table id="table-lomitos">
                     <tr class="column-name">
                         <td class="top-right-table">Lomito</td>
                         <td class="top-left-table">Precio</td>
                     </tr>
-                    <tr>
+                    <tr id="lomito-comun">
                         <td>Común</td>
-                        <td>$410</td>
+                        <td id="precio-lomito-comun"><input type="button" class="button-pedir-left" id="lomito-comun-menos" value="-">$410<input type="button" class="button-pedir-left" id="lomito-comun-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="lomito-especial">
                         <td class="bottom-left-table">Especial</td>
-                        <td class="bottom-right-table">$450</td>
+                        <td id="precio-lomito-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="lomito-especial-menos" value="-">$450<input type="button" class="button-pedir-left" id="lomito-especial-mas" value="+"></td>
                     </tr>
                 </table>
-
-                <table>
+            </div>
+            <div class="table--container">
+                <table id="table-milanesas">
                     <tr class="column-name">
                         <td class="top-right-table">Milanesa</td>
                         <td class="top-left-table">Precio</td>
                     </tr>
-                    <tr>
+                    <tr id="mila-pollo">
                         <td>Pollo (común)</td>
-                        <td>$410</td>
+                        <td id="precio-milapollo-comun"><input type="button" class="button-pedir-left" id="milapollo-comun-menos" value="-">$410<input type="button" class="button-pedir-left" id="milapollo-comun-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="mila-pollo-especial">
                         <td>Pollo (especial)</td>
-                        <td>$450</td>
+                        <td id="precio-milapollo-especial"><input type="button" class="button-pedir-left" id="milapollo-especial-menos" value="-">$450<input type="button" class="button-pedir-left" id="milapollo-especial-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr  id="mila-carne">
                         <td>Carne (común)</td>
-                        <td>$410</td>
+                        <td id="precio-milacarne-comun"><input type="button" class="button-pedir-left" id="milacarne-comun-menos" value="-">$410<input type="button" class="button-pedir-left" id="milacarne-comun-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr  id="mila-carne-especial" >
                         <td class="bottom-left-table">Carne (especial)</td>
-                        <td class="bottom-right-table">$450</td>
+                        <td id="precio-milacarne-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="milacarne-especial-menos" value="-">$450<input type="button" class="button-pedir-left" id="milacarne-especial-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
 
             <span class="empanada-icon-section" id="section-empanada"></span>
             <div class="table--container">
-                <table>
+                <table id="table-empanadas">
                     <tr class="column-name">
                         <td class="top-right-table">Empanada</td>
                         <td>Docena</td>
                         <td class="top-left-table">Media docena</td>
                     </tr>
-                    <tr>
+                    <tr id="emp-saladas">
                         <td>Saladas</td>
-                        <td>$600</td>
-                        <td>$300</td>
+                        <td id="precio-docena-salada"><input type="button" class="button-pedir-left" id="docena-salada-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-salada-mas" value="+"></td>
+                        <td id="precio-media-salada"><input type="button" class="button-pedir-left" id="media-salada-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-salada-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="emp-dulces">
                         <td>Dulces</td>
-                        <td>$600</td>
-                        <td>$300</td>
+                        <td id="precio-docena-dulce"><input type="button" class="button-pedir-left" id="docena-dulce-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-dulce-mas" value="+"></td>
+                        <td id="precio-media-dulce"><input type="button" class="button-pedir-left" id="media-dulce-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-dulce-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="emp-pollo">
                         <td>Pollo</td>
-                        <td>$600</td>
-                        <td>$300</td>
+                        <td id="precio-docena-pollo"><input type="button" class="button-pedir-left" id="docena-pollo-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-pollo-mas" value="+"></td>
+                        <td id="precio-media-pollo"><input type="button" class="button-pedir-left" id="media-pollo-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-pollo-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="emp-arabes">
                         <td>Árabes</td>
-                        <td>$600</td>
-                        <td>$300</td>
+                        <td id="precio-docena-arabe"><input type="button" class="button-pedir-left" id="docena-arabe-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-arabe-mas" value="+"></td>
+                        <td id="precio-media-arabe"><input type="button" class="button-pedir-left" id="media-arabe-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-arabe-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="emp-jyq">
                         <td class="bottom-left-table">Jamón y queso</td>
-                        <td>$600</td>
-                        <td class="bottom-right-table">$300</td>
+                        <td id="precio-docena-jyq"><input type="button" class="button-pedir-left" id="docena-jyq-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-jyq-mas" value="+"></td>
+                        <td id="precio-media-jyq" class="bottom-right-table"><input type="button" class="button-pedir-left" id="media-jyq-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-jyq-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
-
+            <!-- A IMPLEMENTAR BEBIDAS
             <span class="bebida-icon-section" id="section-bebida"></span>
             <div class="table--container">
-                <table>
+                <table id="table-bebidas">
                     <tr class="column-name">
                         <td class="top-right-table">Bebida</td>
                         <td>1,5 Lt.</td>
                         <td class="top-left-table">2,5 Lt.</td>
                     </tr>
-                    <tr>
+                    <tr id="coca">
                         <td>Coca-Cola</td>
-                        <td>$300</td>
-                        <td>$200</td>
+                        <td id="precio-coca-grande">$300</td>
+                        <td id="precio-coca-chica">$200</td>
                     </tr>
-                    <tr>
+                    <tr id="sprite">
                         <td>Sprite</td>
-                        <td>$300</td>
-                        <td>$200</td>
+                        <td id="precio-sprite-grande">$300</td>
+                        <td id="precio-sprite-chica">$200</td>
                     </tr>
-                    <tr>
+                    <tr id="fanta">
                         <td>Fanta</td>
-                        <td>$300</td>
-                        <td>$200</td>
+                        <td id="precio-fanta-grande">$300</td>
+                        <td id="precio-fanta-chica">$200</td>
                     </tr>
-                    <tr>
+                    <tr id="pepsi">
                         <td>Pepsi</td>
-                        <td>$300</td>
-                        <td>$200</td>
+                        <td id="precio-pepsi-grande">$300</td>
+                        <td id="precio-pepsi-chica">$200</td>
                     </tr>
-                    <tr>
+                    <tr id="manaos">
                         <td>Manaos</td>
-                        <td>$300</td>
-                        <td>$200</td>
+                        <td id="precio-manaos-grande">$300</td>
+                        <td id="precio-manaos-chica">$200</td>
                     </tr>
-                    <tr>
+                    <tr id="doble-cola">
                         <td>Doble Cola</td>
-                        <td>$300</td>
-                        <td>$200</td>
+                        <td id="precio-dcola-grande">$300</td>
+                        <td id="precio-dcoca-chica">$200</td>
                     </tr>
-                    <tr>
+                    <tr id="aquarius">
                         <td>Aquarius</td>
-                        <td>$300</td>
-                        <td>$200</td>
+                        <td id="precio-aquarius-grande">$300</td>
+                        <td id="precio-aquarius-chica">$200</td>
                     </tr>
-                    <tr>
+                    <tr id="sidney">
                         <td>Sidney</td>
-                        <td>$300</td>
-                        <td>$200</td>
+                        <td id="precio-sidney-grande">$300</td>
+                        <td id="precio-sidney-chica">$200</td>
                     </tr>
-                    <tr>
-                        <td>Pepsi</td>
-                        <td>$300</td>
-                        <td>$200</td>
-                    </tr>
-                    <tr>
+                    <tr id="agua">
                         <td class="bottom-left-table">Agua Mineral</td>
-                        <td>$400</td>
-                        <td class="bottom-right-table">$200</td>
+                        <td id="precio-agua-grande">$400</td>
+                        <td id="precio-agua-chica" class="bottom-right-table">$200</td>
                     </tr>
                 </table>
             </div>
-
+            -->
             <span class="papas-icon-section" id="section-papas"></span>
             <div class="table--container">
-                <table>
+                <table id="table-papas">
                     <tr class="column-name">
                         <td class="top-right-table">Papas</td>
                         <td class="top-left-table">Precio</td>
                     </tr>
-                    <tr>
+                    <tr id="papa-comun">
                         <td>Común</td>
-                        <td>$250</td>
+                        <td id="precio-papa-comun"><input type="button" class="button-pedir-left" id="papa-comun-menos" value="-">$250<input type="button" class="button-pedir-left" id="papa-comun-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="papa-huevo">
                         <td>Con huevo</td>
-                        <td>$320</td>
+                        <td id="precio-papa-huevo"><input type="button" class="button-pedir-left" id="papa-huevo-menos" value="-">$320<input type="button" class="button-pedir-left" id="papa-huevo-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="papa-cheddar">
                         <td>Cheddar</td>
-                        <td>$370</td>
+                        <td id="precio-papa-cheddar"><input type="button" class="button-pedir-left" id="papa-cheddar-menos" value="-">$370<input type="button" class="button-pedir-left" id="papa-cheddar-mas" value="+"></td>
                     </tr>
-                    <tr>
+                    <tr id="papa-puerro">
                         <td class="bottom-left-table">Puerro</td>
-                        <td class="bottom-right-table">$350</td>
+                        <td id="precio-papa-puerro" class="bottom-right-table"><input type="button" class="button-pedir-left" id="papa-puerro-menos" value="-">$350<input type="button" class="button-pedir-left" id="papa-puerro-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
@@ -317,17 +319,22 @@
     </main>
 
     <footer>
-        <section class="left">
-            <ul>
-
-                <li><span class="instagram-icon"></span><a href="https://instagram.com/saborespatri?utm_medium=copy_link" target="_blank">Instagram</a></li>
-                <li><span class="whatsapp-icon"></span><a href="https://api.whatsapp.com/send?phone=+5493534190049&text=Hola,%20me%20gustar%C3%ADa%20pedir%20..." target="_blank">Whatsapp</a></li>
-            </ul>
-        </section>
-        <section class="right">
-            <img src="./images/icons8-chef-hat-50.png" alt="Logo de Sabores Patri 2021">
-                <p>SABORES PATRI</p>
-        </section>
+        <div class="footer-information">
+            <section class="left">
+                <ul>
+                    <li><span class="instagram-icon"></span><a href="https://instagram.com/saborespatri?utm_medium=copy_link" target="_blank">Instagram</a></li>
+                    <li><span class="whatsapp-icon"></span><a href="https://api.whatsapp.com/send?phone=+5493534190049&text=Hola,%20me%20gustar%C3%ADa%20pedir%20..." target="_blank">Whatsapp</a></li>
+                </ul>
+            </section>
+            <section class="right">
+                <img src="./images/icons8-chef-hat-50.png" alt="Logo de Sabores Patri 2021">
+                    <p>SABORES PATRI</p>
+            </section>
+        </div>  
+        <p>Desarrollado por <span class="nombre-desarrollador">Joaquin Alvarez</span></p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/header.js"></script>  
+    <script src="./javascript/tabla.js"></script>
 </body>
 </html>
