@@ -19,6 +19,37 @@
 </head>
 <body>
     <header>
+        <div id="wrapper">
+            <section id="#section-header">
+                <a id="menu_on">
+                    <span id="barra-1"></span>
+                    <span id="barra-2"></span>
+                    <span id="barra-3"></span>
+                </a>
+            </section>
+            <nav>	
+                <ul>
+                    <li class="detalles-menu_hamb">
+                        <p>
+                            <details>
+                                <summary>Nuestra Comida</summary>
+                                <a id="detail-pizza" href="#section-pizza">Pizzas</a>
+                                <a id="detail-burger" href="#section-burger">Sandwiches</a>
+                                <a id="detail-empanada" href="#section-empanada">Empanadas</a>
+                                <a id="detail-papas" href="#section-papas">Papas</a>
+                                <a id="detail-cajitafeliz" href="#section-cajitafeliz">Cajita Feliz</a>
+                            </details>
+                        </p>
+                    </li>                    
+                    <li><a id="detail-viandas" href="#viandas-section">Viandas de Almuerzo</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a id="detail-contacto" href="#footer-section">Contacto</a></li>
+                </ul>
+            </nav>
+            <section id="content">
+                
+            </section>
+        </div>
         <span class = "header-background" id="header-background"></span>
         <span class="header-icon" id="header-icon"></span>
         <div class="header__text" id="header__text">
@@ -295,7 +326,7 @@
             </div>
         </section>
 
-        <section class="cajita-feliz-section">
+        <section class="cajita-feliz-section" id="section-cajitafeliz">
             <span class="cajita-feliz-principalIcon"></span>
             <h4>CAJITA FELIZ</h4>
             <p>Sorprendé a los más chiquitos con esta propuesta especial para ellos.</p>
@@ -311,14 +342,14 @@
         </section>
 
 
-        <section class="viandas-section">
+        <section id="viandas-section" class="viandas-section">
             <span class="viandas-icon"></span>
             <h3>VIANDAS</h3> 
             <p><span class="text-menu">Menú del día:</span> Milanesa de pollo con puré de papas</p>
         </section>
     </main>
 
-    <footer>
+    <footer id="footer-section">
         <div class="footer-information">
             <section class="left">
                 <ul>
@@ -333,7 +364,10 @@
         </div>  
         <p>Desarrollado por <span class="nombre-desarrollador">Joaquin Alvarez</span></p>
     </footer>
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- archivos js -->
+    <script src="./javascript/menu-hamb.js"></script>
     <script src="./javascript/header.js"></script>  
     <script src="./javascript/tabla.js"></script>
 </body>

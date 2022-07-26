@@ -127,6 +127,90 @@ header .header-icon {
     color: var(--dark-blue);
 }
 
+/* MENU HAMBURGUESA */
+
+#wrapper {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#menu_on{
+	display: inline-block;
+	width:30px;
+	height: 20px;
+	position: relative;
+	z-index: 2;
+}
+ 
+#menu_on span{
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: #fff;
+	transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+	transform-origin : 0px 100%;
+}
+ 
+#menu_on span:nth-child(2){
+	top: calc(50% - 2px);
+}
+ 
+#menu_on span:nth-child(3){
+    bottom: 0;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left:-300px; /* Escondemos nuestro menú con un valor negativo */ 
+	width: 300px;
+	z-index: 1;
+	padding: 90px 30px 30px;
+	background: var(--dark-blue);
+	opacity: 0;
+	transition: all 0.75s ease;
+	font-size: 1.2em;
+	overflow-y: auto;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a, nav .detalles-menu_hamb{
+	display:block;
+	text-decoration: none;
+	padding: 10px;
+	color: rgba(255,255,255,0.75);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	transition: all ease 0.25s;
+}
+ 
+nav a:hover{
+	color: rgba(255,255,255,1);
+	border-bottom-color:rgba(255,255,255,0.4);
+}
+
+.visible_menu #barra-1{
+	transform: rotate(45deg) translate(-2px,1px); 
+}
+ 
+.visible_menu #barra-2{
+	opacity: 0;
+}
+ 
+.visible_menu #barra-3{
+	transform: rotate(-45deg) translate(-3px,3px); 
+}
+
+.visible_menu nav{
+	left: 0;
+	opacity: 1;
+}
 
 main {
     display: flex;
@@ -156,7 +240,9 @@ main {
     flex-direction: column;
     align-items: center;
     background-image: url('./images/superficies-pizarra_34805-10.jpg');
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -189,6 +275,7 @@ main .main__food-fast .food-titulo {
     margin-top: 10px;
     border-radius: 5px;
     list-style-type: none;
+    box-shadow: 1px 1px 5px rgba(25, 24, 24, 0.94);
 }
 
 #pizza {
