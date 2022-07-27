@@ -1,9 +1,9 @@
 //VARIABLES CONTADORAS DE PRODUCTOS
-let registroArticulosPedidos = new Map();
+var registroArticulosPedidos = new Map();
 var cantidadComunes = 0;
 var cantidadMediasComunes = 0;
 
-function cargarEventosEscuchadores() {
+$(document).ready(function cargarEventosEscuchadores() {
     var tables = document.querySelectorAll(".table--container");
     var variablesBotones = [];
     var cantidadElementosArray = 0;
@@ -37,9 +37,13 @@ function cargarEventosEscuchadores() {
         }
     }
     //console.log(variablesBotones);
+});
+
+function getDiccionario() {
+    return registroArticulosPedidos;
 }
 
-function cargarDiccionario() {
+$(document).ready(function cargarDiccionario() {
     var tables = document.querySelectorAll(".table--container");
     for(var i=0; i < tables.length; i++) {
         var table = tables[i].childNodes[1];
@@ -55,7 +59,7 @@ function cargarDiccionario() {
             //registroArticulosPedidos.set(keyMap,0);
         }
     }
-}
+});
 
 function buscarCantidadArticulo(idArticulo) {
     var cantidad = 0;  
@@ -76,17 +80,17 @@ function actualizarRegistroPedidos(idArticulo, cantidadActualizada) {
 }
 
 //EJECUCION DE FUNCIONES INICIALES 
-cargarDiccionario();
-cargarEventosEscuchadores();
+
 
 //EVENTOS ESCUCHADORES DE LOS BOTONES
 //PIZZA COMUN
 var buttonMenosComun = document.querySelector("#comun-menos");
-buttonMenosComun.addEventListener("click",eliminarComun);
-
 var buttonMasComun = document.querySelector("#comun-mas");
-buttonMasComun.addEventListener("click",adicionarComun);
 
+$(document).ready(function () {
+    buttonMenosComun.addEventListener("click",eliminarComun);
+    buttonMasComun.addEventListener("click",adicionarComun);
+});
 
 
 function eliminarComun(evento) {
@@ -140,4 +144,7 @@ function adicionarComun(evento) {
     //console.log(totalPedidoNum.toString());
     totalFlotanteText.textContent = "Total de tu pedido: $" + totalPedidoNum.toString();
 }
+
+
+
 

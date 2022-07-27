@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Patri - Detalle de Pedido</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/icons8-chef-hat-50.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto+Condensed:wght@300;700&family=Roboto:wght@400;500&family=Trocchi&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header class="header2">
+            <div id="wrapper">
+                <section id="#section-header">
+                    <a id="menu_on">
+                        <span id="barra-1"></span>
+                        <span id="barra-2"></span>
+                        <span id="barra-3"></span>
+                    </a>
+                </section>
+                <nav>	
+                    <ul>
+                        <li class="detalles-menu_hamb">
+                            <p>
+                                <details>
+                                    <summary>Nuestra Comida</summary>
+                                    <a id="detail-pizza" href="#section-pizza">Pizzas</a>
+                                    <a id="detail-burger" href="#section-burger">Sandwiches</a>
+                                    <a id="detail-empanada" href="#section-empanada">Empanadas</a>
+                                    <a id="detail-papas" href="#section-papas">Papas</a>
+                                    <a id="detail-cajitafeliz" href="#section-cajitafeliz">Cajita Feliz</a>
+                                </details>
+                            </p>
+                        </li>                    
+                        <li><a id="detail-viandas" href="#viandas-section">Viandas de Almuerzo</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a id="detail-contacto" href="#footer-section">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <span class = "background" id="header-background"></span>
+            <div class="titulo" id="header__text">
+                <h1>SABORES PATRI</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="food--section">
+                <div class="main__food-fast">
+                    <p class="food-titulo">Detalle de Pedido</p>
+                </div>
+                <div class="table--container">
+                    <table class="tabla-detalle">
+                        <tr class="column-name">
+                            <td class="top-right-table">Concepto</td>
+                            <td class="top-left-table">Precio</td>
+                        </tr>
+                        <tr id="pizza-comun">
+                            <td>Común</td>
+                            <td id="precio-comun">$350</td>                        
+                        </tr>
+                        <tr id="pizza-especial">
+                            <td>Especial</td>
+                            <td id="precio-especial">$400</td>
+                        </tr>
+                        <tr id="pizza-fuga">
+                            <td>Fuggazeta</td>
+                            <td id="precio-fuga">$450</td>
+                        </tr>
+                        <tr id="pizza-napo">
+                            <td>Napolitana</td>
+                            <td id="precio-napo">$400</td>
+                        </tr>
+                        <tr id="pizza-arge">
+                            <td>Argentina</td>
+                            <td id="precio-arge">$500</td>
+                            </tr>
+                        <tr id="pizza-calabresa">
+                            <td class="bottom-left-table">Calabresa</td>
+                            <td id="precio-calabresa">$400</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./javascript/menu-hamb.js"></script>
+<script src="./javascript/header-other-pages.js"></script>
+<script type="module" src="./javascript/detalle-pedido.js"></script>
+</html>

@@ -109,7 +109,7 @@ header .header-icon {
     width: 100%;
     height: 70px;
     background-color: var(--dark-blue);
-    
+    filter: brightness(75%);
 }
 
 .header2 .headericon {
@@ -126,6 +126,11 @@ header .header-icon {
 .header2 .titulo p{
     color: var(--dark-blue);
 }
+
+.header-pages { /*estilo del header en las pags secundarias*/
+    position: relative;
+}
+
 
 /* MENU HAMBURGUESA */
 
@@ -333,7 +338,6 @@ main .main__food-fast .food-titulo {
     max-width: 350px;
     height: auto;
     margin: 0 auto;
-    
 }
 
 .table--container table {
@@ -345,7 +349,6 @@ main .main__food-fast .food-titulo {
 .table--container td {
     width: 33%;
     font-size: 1.4rem;
-    /*padding: 10px 0;*/
     font-weight: 500;
     color: var(--soft-white);
     background-color: rgba(24, 22, 22, 0.945);
@@ -726,6 +729,7 @@ footer .left ul {
 .total-flotante {
     max-width: 70%;
     height: 50px;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -766,3 +770,15 @@ footer .left ul {
     background-color:#eeccb72b;
     transition: 200ms all;
 }
+
+/*ESTILOS DEL DETALLE DE PEDIDO*/
+.tabla-detalle td{
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid #f1faee18;
+}
+
+.tabla-detalle td:nth-child(2) {
+    width: 5%;
+}
+

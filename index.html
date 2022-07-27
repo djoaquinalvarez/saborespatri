@@ -60,7 +60,7 @@
 
     <main>
         <a href="https://api.whatsapp.com/send?phone=+5493534190049&text=Hola,%20me%20gustar%C3%ADa%20pedir%20..." target="_blank" class="boton-flotante"></a>
-        <p class="total-flotante">Total de tu pedido: $0</p>
+        <a href="./detalle-pedido.html" class="total-flotante">Total de tu pedido: $0</a>
         <section class="main-quick-menu" id="main_quick_menu">
             <span class="menu-icon"></span>
             <div class="main__food-fast">
@@ -88,63 +88,68 @@
                     </tr>
                     <tr id="pizza-comun">
                         <td>Común</td>
-                        <td id="precio-comun"><input type="button" class="button-pedir-left" id="comun-menos" value="-">$350<input type="button" class="button-pedir-right" id="comun-mas" value="+"></td>
-                        <td id="precio-media-comun"><input type="button" class="button-pedir-left" id="comun-media-menos" value="-">$200<input type="button" class="button-pedir-right" id="comun-media-mas" value="+"></td>
+                        <td id="precio-comun"><input type="button" class="button-pedir-left" id="comun-menos" value="-">$600<input type="button" class="button-pedir-right" id="comun-mas" value="+"></td>
+                        <td id="precio-media-comun"><input type="button" class="button-pedir-left" id="comun-media-menos" value="-">$400<input type="button" class="button-pedir-right" id="comun-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-especial">
                         <td>Especial</td>
-                        <td id="precio-especial"><input type="button" class="button-pedir-left" id="especial-menos" value="-">$400<input type="button" class="button-pedir-right" id="especial-mas" value="+"></td>
-                        <td id="precio-media-especial"><input type="button" class="button-pedir-left" id="especial-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="especial-media-mas" value="+"></td>
+                        <td id="precio-especial"><input type="button" class="button-pedir-left" id="especial-menos" value="-">$750<input type="button" class="button-pedir-right" id="especial-mas" value="+"></td>
+                        <td id="precio-media-especial"><input type="button" class="button-pedir-left" id="especial-media-menos" value="-">$450<input type="button" class="button-pedir-left" id="especial-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-fuga">
                         <td>Fuggazeta</td>
-                        <td id="precio-fuga"><input type="button" class="button-pedir-left" id="fuga-menos" value="-">$450<input type="button" class="button-pedir-left" id="fuga-mas" value="+"></td>
-                        <td id="precio-media-fuga"><input type="button" class="button-pedir-left" id="fuga-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="fuga-media-mas" value="+"></td>
+                        <td id="precio-fuga"><input type="button" class="button-pedir-left" id="fuga-menos" value="-">$850<input type="button" class="button-pedir-left" id="fuga-mas" value="+"></td>
+                        <td id="precio-media-fuga"><input type="button" class="button-pedir-left" id="fuga-media-menos" value="-">$500<input type="button" class="button-pedir-left" id="fuga-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-napo">
                         <td>Napolitana</td>
-                        <td id="precio-napo"><input type="button" class="button-pedir-left" id="napo-menos" value="-">$400<input type="button" class="button-pedir-left" id="napo-mas" value="+"></td>
-                        <td id="precio-media-napo"><input type="button" class="button-pedir-left" id="napo-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="napo-media-mas" value="+"></td>
+                        <td id="precio-napo"><input type="button" class="button-pedir-left" id="napo-menos" value="-">$850<input type="button" class="button-pedir-left" id="napo-mas" value="+"></td>
+                        <td id="precio-media-napo"><input type="button" class="button-pedir-left" id="napo-media-menos" value="-">$500<input type="button" class="button-pedir-left" id="napo-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-arge">
                         <td>Argentina</td>
-                        <td id="precio-arge"><input type="button" class="button-pedir-left" id="arge-menos" value="-">$500<input type="button" class="button-pedir-left" id="arge-mas" value="+"></td>
-                        <td id="precio-media-arge"><input type="button" class="button-pedir-left" id="arge-media-menos" value="-">$270<input type="button" class="button-pedir-left" id="arge-media-mas" value="+"></td>
+                        <td id="precio-arge"><input type="button" class="button-pedir-left" id="arge-menos" value="-">$900<input type="button" class="button-pedir-left" id="arge-mas" value="+"></td>
+                        <td id="precio-media-arge"><input type="button" class="button-pedir-left" id="arge-media-menos" value="-">$550<input type="button" class="button-pedir-left" id="arge-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-doblequeso">
                         <td>Doble queso</td>
-                        <td id="precio-doblequeso"><input type="button" class="button-pedir-left" id="dobleq-menos" value="-">$400<input type="button" class="button-pedir-left" id="dobleq-mas" value="+"></td>
-                        <td id="precio-media-doblequeso"><input type="button" class="button-pedir-left" id="dobleq-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="dobleq-media-mas" value="+"></td>
+                        <td id="precio-doblequeso"><input type="button" class="button-pedir-left" id="dobleq-menos" value="-">$700<input type="button" class="button-pedir-left" id="dobleq-mas" value="+"></td>
+                        <td id="precio-media-doblequeso"><input type="button" class="button-pedir-left" id="dobleq-media-menos" value="-">$450<input type="button" class="button-pedir-left" id="dobleq-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-palmito">
                         <td>Palmito</td>
-                        <td id="precio-palmito"><input type="button" class="button-pedir-left" id="palmito-menos" value="-">$500<input type="button" class="button-pedir-left" id="palmito-mas" value="+"></td>
-                        <td id="precio-media-palmito"><input type="button" class="button-pedir-left" id="palmito-media-menos" value="-">$270<input type="button" class="button-pedir-left" id="palmito-media-mas" value="+"></td>
+                        <td id="precio-palmito"><input type="button" class="button-pedir-left" id="palmito-menos" value="-">$900<input type="button" class="button-pedir-left" id="palmito-mas" value="+"></td>
+                        <td id="precio-media-palmito"><input type="button" class="button-pedir-left" id="palmito-media-menos" value="-">$550<input type="button" class="button-pedir-left" id="palmito-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-choclo">
                         <td>Choclo</td>
-                        <td id="precio-choclo"><input type="button" class="button-pedir-left" id="choclo-menos" value="-">$400<input type="button" class="button-pedir-left" id="choclo-mas" value="+"></td>
-                        <td id="precio-media-choclo"><input type="button" class="button-pedir-left" id="choclo-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="choclo-media-mas" value="+"></td>
+                        <td id="precio-choclo"><input type="button" class="button-pedir-left" id="choclo-menos" value="-">$750<input type="button" class="button-pedir-left" id="choclo-mas" value="+"></td>
+                        <td id="precio-media-choclo"><input type="button" class="button-pedir-left" id="choclo-media-menos" value="-">$450<input type="button" class="button-pedir-left" id="choclo-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-anchoa">
                         <td>Anchoa</td>
-                        <td id="precio-anchoa"><input type="button" class="button-pedir-left" id="anchoa-menos" value="-">$470<input type="button" class="button-pedir-left" id="anchoa-mas" value="+"></td>
-                        <td id="precio-media-anchoa"><input type="button" class="button-pedir-left" id="anchoa-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="anchoa-media-mas" value="+"></td>
+                        <td id="precio-anchoa"><input type="button" class="button-pedir-left" id="anchoa-menos" value="-">$950<input type="button" class="button-pedir-left" id="anchoa-mas" value="+"></td>
+                        <td id="precio-media-anchoa"><input type="button" class="button-pedir-left" id="anchoa-media-menos" value="-">$550<input type="button" class="button-pedir-left" id="anchoa-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-roque">
                         <td>Roquefort</td>
-                        <td id="precio-roque"><input type="button" class="button-pedir-left" id="roque-menos" value="-">$470<input type="button" class="button-pedir-left" id="roque-mas" value="+"></td>
-                        <td id="precio-media-roque"><input type="button" class="button-pedir-left" id="roque-media-menos" value="-">$250<input type="button" class="button-pedir-left" id="roque-media-mas" value="+"></td>
+                        <td id="precio-roque"><input type="button" class="button-pedir-left" id="roque-menos" value="-">$950<input type="button" class="button-pedir-left" id="roque-mas" value="+"></td>
+                        <td id="precio-media-roque"><input type="button" class="button-pedir-left" id="roque-media-menos" value="-">$550<input type="button" class="button-pedir-left" id="roque-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-veggi">
                         <td>Vegana</td>
-                        <td id="precio-veggi"><input type="button" class="button-pedir-left" id="veggi-menos" value="-">$500<input type="button" class="button-pedir-left" id="veggi-mas" value="+"></td>
-                        <td id="precio-media-veggi"><input type="button" class="button-pedir-left" id="veggi-media-menos" value="-">$270<input type="button" class="button-pedir-left" id="veggi-media-mas" value="+"></td>
+                        <td id="precio-veggi"><input type="button" class="button-pedir-left" id="veggi-menos" value="-">$850<input type="button" class="button-pedir-left" id="veggi-mas" value="+"></td>
+                        <td id="precio-media-veggi"><input type="button" class="button-pedir-left" id="veggi-media-menos" value="-">$550<input type="button" class="button-pedir-left" id="veggi-media-mas" value="+"></td>
                     </tr>
                     <tr id="pizza-calabresa">
-                        <td class="bottom-left-table">Calabresa</td>
-                        <td id="precio-calabresa"><input type="button" class="button-pedir-left" id="calabresa-menos" value="-">$400<input type="button" class="button-pedir-left" id="calabresa-mas" value="+"></td>
-                        <td id="precio-media-calabresa" class="bottom-right-table"><input type="button" class="button-pedir-left" id="calabresa-media-menos" value="-">$220<input type="button" class="button-pedir-left" id="calabresa-media-mas" value="+"></td>
+                        <td >Calabresa</td>
+                        <td id="precio-calabresa"><input type="button" class="button-pedir-left" id="calabresa-menos" value="-">$850<input type="button" class="button-pedir-left" id="calabresa-mas" value="+"></td>
+                        <td id="precio-media-calabresa"><input type="button" class="button-pedir-left" id="calabresa-media-menos" value="-">$550<input type="button" class="button-pedir-left" id="calabresa-media-mas" value="+"></td>
+                    </tr>
+                    <tr id="pizza-cuatroquesos">
+                        <td class="bottom-left-table">4 quesos</td>
+                        <td id="precio-cuatroquesos"><input type="button" class="button-pedir-left" id="cuatroquesos-menos" value="-">$900<input type="button" class="button-pedir-left" id="cuatroquesos-mas" value="+"></td>
+                        <td id="precio-media-cuatroquesos" class="bottom-right-table"><input type="button" class="button-pedir-left" id="cuatroquesos-media-menos" value="-">$550<input type="button" class="button-pedir-left" id="cuatroquesos-media-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
@@ -158,11 +163,11 @@
                     </tr>
                     <tr id="hamb-comun">
                         <td>Común</td>
-                        <td id="precio-hamb-comun"><input type="button" class="button-pedir-left" id="hamb-comun-menos" value="-">$330<input type="button" class="button-pedir-left" id="hamb-comun-mas" value="+"></td>
+                        <td id="precio-hamb-comun"><input type="button" class="button-pedir-left" id="hamb-comun-menos" value="-">$700<input type="button" class="button-pedir-left" id="hamb-comun-mas" value="+"></td>
                     </tr>
                     <tr id="hamb-especial">
                         <td class="bottom-left-table">Especial</td>
-                        <td id="precio-hamb-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="hamb-especial-menos" value="-">$370<input type="button" class="button-pedir-left" id="hamb-especial-mas" value="+"></td>
+                        <td id="precio-hamb-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="hamb-especial-menos" value="-">$750<input type="button" class="button-pedir-left" id="hamb-especial-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
@@ -174,11 +179,11 @@
                     </tr>
                     <tr id="lomito-comun">
                         <td>Común</td>
-                        <td id="precio-lomito-comun"><input type="button" class="button-pedir-left" id="lomito-comun-menos" value="-">$410<input type="button" class="button-pedir-left" id="lomito-comun-mas" value="+"></td>
+                        <td id="precio-lomito-comun"><input type="button" class="button-pedir-left" id="lomito-comun-menos" value="-">$800<input type="button" class="button-pedir-left" id="lomito-comun-mas" value="+"></td>
                     </tr>
                     <tr id="lomito-especial">
                         <td class="bottom-left-table">Especial</td>
-                        <td id="precio-lomito-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="lomito-especial-menos" value="-">$450<input type="button" class="button-pedir-left" id="lomito-especial-mas" value="+"></td>
+                        <td id="precio-lomito-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="lomito-especial-menos" value="-">$850<input type="button" class="button-pedir-left" id="lomito-especial-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
@@ -190,19 +195,19 @@
                     </tr>
                     <tr id="mila-pollo">
                         <td>Pollo (común)</td>
-                        <td id="precio-milapollo-comun"><input type="button" class="button-pedir-left" id="milapollo-comun-menos" value="-">$410<input type="button" class="button-pedir-left" id="milapollo-comun-mas" value="+"></td>
+                        <td id="precio-milapollo-comun"><input type="button" class="button-pedir-left" id="milapollo-comun-menos" value="-">$800<input type="button" class="button-pedir-left" id="milapollo-comun-mas" value="+"></td>
                     </tr>
                     <tr id="mila-pollo-especial">
                         <td>Pollo (especial)</td>
-                        <td id="precio-milapollo-especial"><input type="button" class="button-pedir-left" id="milapollo-especial-menos" value="-">$450<input type="button" class="button-pedir-left" id="milapollo-especial-mas" value="+"></td>
+                        <td id="precio-milapollo-especial"><input type="button" class="button-pedir-left" id="milapollo-especial-menos" value="-">$850<input type="button" class="button-pedir-left" id="milapollo-especial-mas" value="+"></td>
                     </tr>
                     <tr  id="mila-carne">
                         <td>Carne (común)</td>
-                        <td id="precio-milacarne-comun"><input type="button" class="button-pedir-left" id="milacarne-comun-menos" value="-">$410<input type="button" class="button-pedir-left" id="milacarne-comun-mas" value="+"></td>
+                        <td id="precio-milacarne-comun"><input type="button" class="button-pedir-left" id="milacarne-comun-menos" value="-">$800<input type="button" class="button-pedir-left" id="milacarne-comun-mas" value="+"></td>
                     </tr>
                     <tr  id="mila-carne-especial" >
                         <td class="bottom-left-table">Carne (especial)</td>
-                        <td id="precio-milacarne-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="milacarne-especial-menos" value="-">$450<input type="button" class="button-pedir-left" id="milacarne-especial-mas" value="+"></td>
+                        <td id="precio-milacarne-especial" class="bottom-right-table"><input type="button" class="button-pedir-left" id="milacarne-especial-menos" value="-">$850<input type="button" class="button-pedir-left" id="milacarne-especial-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
@@ -217,28 +222,28 @@
                     </tr>
                     <tr id="emp-saladas">
                         <td>Saladas</td>
-                        <td id="precio-docena-salada"><input type="button" class="button-pedir-left" id="docena-salada-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-salada-mas" value="+"></td>
-                        <td id="precio-media-salada"><input type="button" class="button-pedir-left" id="media-salada-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-salada-mas" value="+"></td>
+                        <td id="precio-docena-salada"><input type="button" class="button-pedir-left" id="docena-salada-menos" value="-">$1200<input type="button" class="button-pedir-left" id="docena-salada-mas" value="+"></td>
+                        <td id="precio-media-salada"><input type="button" class="button-pedir-left" id="media-salada-menos" value="-">$600<input type="button" class="button-pedir-left" id="media-salada-mas" value="+"></td>
                     </tr>
                     <tr id="emp-dulces">
                         <td>Dulces</td>
-                        <td id="precio-docena-dulce"><input type="button" class="button-pedir-left" id="docena-dulce-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-dulce-mas" value="+"></td>
-                        <td id="precio-media-dulce"><input type="button" class="button-pedir-left" id="media-dulce-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-dulce-mas" value="+"></td>
+                        <td id="precio-docena-dulce"><input type="button" class="button-pedir-left" id="docena-dulce-menos" value="-">$1200<input type="button" class="button-pedir-left" id="docena-dulce-mas" value="+"></td>
+                        <td id="precio-media-dulce"><input type="button" class="button-pedir-left" id="media-dulce-menos" value="-">$600<input type="button" class="button-pedir-left" id="media-dulce-mas" value="+"></td>
                     </tr>
                     <tr id="emp-pollo">
                         <td>Pollo</td>
-                        <td id="precio-docena-pollo"><input type="button" class="button-pedir-left" id="docena-pollo-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-pollo-mas" value="+"></td>
-                        <td id="precio-media-pollo"><input type="button" class="button-pedir-left" id="media-pollo-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-pollo-mas" value="+"></td>
+                        <td id="precio-docena-pollo"><input type="button" class="button-pedir-left" id="docena-pollo-menos" value="-">$1200<input type="button" class="button-pedir-left" id="docena-pollo-mas" value="+"></td>
+                        <td id="precio-media-pollo"><input type="button" class="button-pedir-left" id="media-pollo-menos" value="-">$600<input type="button" class="button-pedir-left" id="media-pollo-mas" value="+"></td>
                     </tr>
                     <tr id="emp-arabes">
                         <td>Árabes</td>
-                        <td id="precio-docena-arabe"><input type="button" class="button-pedir-left" id="docena-arabe-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-arabe-mas" value="+"></td>
-                        <td id="precio-media-arabe"><input type="button" class="button-pedir-left" id="media-arabe-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-arabe-mas" value="+"></td>
+                        <td id="precio-docena-arabe"><input type="button" class="button-pedir-left" id="docena-arabe-menos" value="-">$1320<input type="button" class="button-pedir-left" id="docena-arabe-mas" value="+"></td>
+                        <td id="precio-media-arabe"><input type="button" class="button-pedir-left" id="media-arabe-menos" value="-">$660<input type="button" class="button-pedir-left" id="media-arabe-mas" value="+"></td>
                     </tr>
                     <tr id="emp-jyq">
                         <td class="bottom-left-table">Jamón y queso</td>
-                        <td id="precio-docena-jyq"><input type="button" class="button-pedir-left" id="docena-jyq-menos" value="-">$600<input type="button" class="button-pedir-left" id="docena-jyq-mas" value="+"></td>
-                        <td id="precio-media-jyq" class="bottom-right-table"><input type="button" class="button-pedir-left" id="media-jyq-menos" value="-">$300<input type="button" class="button-pedir-left" id="media-jyq-mas" value="+"></td>
+                        <td id="precio-docena-jyq"><input type="button" class="button-pedir-left" id="docena-jyq-menos" value="-">$1200<input type="button" class="button-pedir-left" id="docena-jyq-mas" value="+"></td>
+                        <td id="precio-media-jyq" class="bottom-right-table"><input type="button" class="button-pedir-left" id="media-jyq-menos" value="-">$600<input type="button" class="button-pedir-left" id="media-jyq-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
@@ -308,19 +313,19 @@
                     </tr>
                     <tr id="papa-comun">
                         <td>Común</td>
-                        <td id="precio-papa-comun"><input type="button" class="button-pedir-left" id="papa-comun-menos" value="-">$250<input type="button" class="button-pedir-left" id="papa-comun-mas" value="+"></td>
+                        <td id="precio-papa-comun"><input type="button" class="button-pedir-left" id="papa-comun-menos" value="-">$500<input type="button" class="button-pedir-left" id="papa-comun-mas" value="+"></td>
                     </tr>
                     <tr id="papa-huevo">
                         <td>Con huevo</td>
-                        <td id="precio-papa-huevo"><input type="button" class="button-pedir-left" id="papa-huevo-menos" value="-">$320<input type="button" class="button-pedir-left" id="papa-huevo-mas" value="+"></td>
+                        <td id="precio-papa-huevo"><input type="button" class="button-pedir-left" id="papa-huevo-menos" value="-">$650<input type="button" class="button-pedir-left" id="papa-huevo-mas" value="+"></td>
                     </tr>
                     <tr id="papa-cheddar">
                         <td>Cheddar</td>
-                        <td id="precio-papa-cheddar"><input type="button" class="button-pedir-left" id="papa-cheddar-menos" value="-">$370<input type="button" class="button-pedir-left" id="papa-cheddar-mas" value="+"></td>
+                        <td id="precio-papa-cheddar"><input type="button" class="button-pedir-left" id="papa-cheddar-menos" value="-">$700<input type="button" class="button-pedir-left" id="papa-cheddar-mas" value="+"></td>
                     </tr>
                     <tr id="papa-puerro">
                         <td class="bottom-left-table">Puerro</td>
-                        <td id="precio-papa-puerro" class="bottom-right-table"><input type="button" class="button-pedir-left" id="papa-puerro-menos" value="-">$350<input type="button" class="button-pedir-left" id="papa-puerro-mas" value="+"></td>
+                        <td id="precio-papa-puerro" class="bottom-right-table"><input type="button" class="button-pedir-left" id="papa-puerro-menos" value="-">$700<input type="button" class="button-pedir-left" id="papa-puerro-mas" value="+"></td>
                     </tr>
                 </table>
             </div>
@@ -338,7 +343,7 @@
                 <span class="sorpresa-icon"></span>
             </div>
             <p class="cajitafeliz-ingredientes">Hamburguesa + papas + lata de gaseosa + SORPRESA</p>
-            <p class="cajitafeliz--price"><span class="cajitafeliz--price-sign">$</span>450</p>
+            <p class="cajitafeliz--price"><span class="cajitafeliz--price-sign">$</span>950</p>
         </section>
 
 
@@ -369,6 +374,6 @@
     <!-- archivos js -->
     <script src="./javascript/menu-hamb.js"></script>
     <script src="./javascript/header.js"></script>  
-    <script src="./javascript/tabla.js"></script>
+    <script type="module" src="./javascript/tabla.js"></script>
 </body>
 </html>
