@@ -355,8 +355,12 @@ main .main__food-fast .food-titulo {
     transition: 200ms all;
 }
 
+.table--container td:nth-child(1) {
+    width: 25%;
+}
+
 .button-pedir-left, .button-pedir-right {
-    padding: 10px 11px 10px 11px;
+    padding: 10px 13px 10px 13px;
     background-color: transparent;
     color: white;
     font-weight: bold;
